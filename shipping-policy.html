@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الشحن - First Show</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-pink-600">First Show</div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-600 font-medium">الرئيسية</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">فساتين</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">شنط</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">أحذية</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">إكسسوارات</a>
+                </nav>
+                
+                <!-- Icons -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <a href="#" class="text-gray-700 hover:text-pink-600">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="cart.html" class="text-gray-700 hover:text-pink-600 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count absolute -top-2 -right-2 bg-pink-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">0</span>
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="md:hidden text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center text-sm text-gray-600">
+            <a href="index.html" class="hover:text-pink-600">الرئيسية</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-900 font-medium">سياسة الشحن</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="py-12 bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1920x400/FF69B4/FFFFFF?text=سياسة+الشحن')">
+        <div class="container mx-auto px-4">
+            <div class="bg-white bg-opacity-90 p-8 md:p-12 max-w-3xl rounded-lg">
+                <h1 class="text-4xl font-bold mb-6">سياسة الشحن والتوصيل</h1>
+                <p class="text-lg text-gray-700">نسعى دائمًا لتوفير تجربة شحن وتوصيل سلسة وموثوقة لجميع عملائنا. تعرف على سياسات الشحن والتوصيل الخاصة بنا.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shipping Policy Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Shipping Methods -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6">طرق الشحن</h2>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                        <div class="flex items-start mb-4">
+                            <img src="assets/img/aramex.png" alt="Aramex" class="w-16 ml-4">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">أرامكس</h3>
+                                <p class="text-gray-700 mb-2">شحن سريع لجميع مناطق المملكة</p>
+                                <p class="text-gray-700">مدة التوصيل: 2-4 أيام عمل</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <img src="assets/img/smsa.png" alt="SMSA" class="w-16 ml-4">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">سمسا</h3>
+                                <p class="text-gray-700 mb-2">شحن موثوق لجميع مناطق المملكة</p>
+                                <p class="text-gray-700">مدة التوصيل: 3-5 أيام عمل</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">يتم اختيار شركة الشحن بناءً على موقعك الجغرافي وتوفر الخدمة في منطقتك. نحرص دائمًا على اختيار أفضل وأسرع خدمة شحن متاحة.</p>
+                </div>
+                
+                <!-- Shipping Costs -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6">تكاليف الشحن</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="border border-gray-200 px-4 py-3 text-right">قيمة الطلب</th>
+                                    <th class="border border-gray-200 px-4 py-3 text-right">رسوم الشحن</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-200 px-4 py-3">أقل من 200 ر.س</td>
+                                    <td class="border border-gray-200 px-4 py-3">30 ر.س</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="border border-gray-200 px-4 py-3">من 200 ر.س إلى 500 ر.س</td>
+                                    <td class="border border-gray-200 px-4 py-3">15 ر.س</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-200 px-4 py-3">أكثر من 500 ر.س</td>
+                                    <td class="border border-gray-200 px-4 py-3 font-semibold text-green-600">شحن مجاني</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt-4 text-gray-700">* قد تختلف رسوم الشحن للمناطق النائية والجزر.</p>
+                </div>
+                
+                <!-- Delivery Time -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6">مدة التوصيل</h2>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-2">المدن الرئيسية</h3>
+                            <p class="text-gray-700">الرياض، جدة، الدمام، مكة، المدينة المنورة</p>
+                            <p class="text-gray-700 font-medium mt-2">2-4 أيام عمل</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-2">المدن الأخرى</h3>
+                            <p class="text-gray-700">باقي مدن المملكة</p>
+                            <p class="text-gray-700 font-medium mt-2">3-5 أيام عمل</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold mb-2">المناطق النائية</h3>
+                            <p class="text-gray-700">القرى والمناطق البعيدة</p>
+                            <p class="text-gray-700 font-medium mt-2">5-7 أيام عمل</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-700">* مدة التوصيل المذكورة تقديرية وقد تتأثر بعوامل خارجة عن إرادتنا مثل الظروف الجوية أو الأعياد والعطلات الرسمية.</p>
+                </div>
+                
+                <!-- Order Tracking -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6">تتبع الطلب</h2>
+                    <p class="text-gray-700 mb-4">يمكنك تتبع طلبك بسهولة من خلال:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                        <li>الدخول إلى حسابك الشخصي والانتقال إلى صفحة "طلباتي"</li>
+                        <li>استخدام رقم التتبع المرسل إليك عبر البريد الإلكتروني أو الرسائل النصية</li>
+                        <li>التواصل مع خدمة العملاء عبر الهاتف أو البريد الإلكتروني</li>
+                    </ul>
+                    <p class="text-gray-700">سيتم إرسال تحديثات منتظمة عن حالة طلبك عبر البريد الإلكتروني والرسائل النصية.</p>
+                </div>
+                
+                <!-- Return & Exchange -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-6">سياسة الاسترجاع والاستبدال</h2>
+                    <p class="text-gray-700 mb-4">نحن نقدم سياسة استرجاع مرنة لضمان رضاك التام:</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+                        <li>يمكنك استرجاع أو استبدال المنتج خلال 14 يومًا من تاريخ الاستلام</li>
+                        <li>يجب أن يكون المنتج في حالته الأصلية مع جميع الملصقات والتغليف</li>
+                        <li>لا يمكن استرجاع المنتجات المخفضة إلا في حالة وجود عيب مصنعي</li>
+                        <li>يتم استرداد المبلغ بنفس طريقة الدفع الأصلية خلال 7-14 يوم عمل</li>
+                    </ul>
+                    <p class="text-gray-700">لمزيد من المعلومات حول سياسة الاسترجاع والاستبدال، يرجى التواصل مع خدمة العملاء.</p>
+                </div>
+                
+                <!-- Contact for Shipping Issues -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">مشاكل الشحن والتوصيل</h2>
+                    <p class="text-gray-700 mb-4">في حالة وجود أي مشكلة متعلقة بالشحن أو التوصيل، يرجى التواصل معنا فورًا من خلال:</p>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center ml-4">
+                                <i class="fas fa-phone-alt text-pink-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">الهاتف</h3>
+                                <p class="text-gray-700">+966 12 345 6789</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center ml-4">
+                                <i class="fas fa-envelope text-pink-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">البريد الإلكتروني</h3>
+                                <p class="text-gray-700">shipping@firstshow.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">الأسئلة الشائعة حول الشحن</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 text-left bg-white hover:bg-gray-50 focus:outline-none" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium">هل يمكنني تغيير عنوان التوصيل بعد تقديم الطلب؟</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700">نعم، يمكنك تغيير عنوان التوصيل قبل شحن الطلب. يرجى التواصل مع خدمة العملاء في أقرب وقت ممكن لتحديث العنوان.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 text-left bg-white hover:bg-gray-50 focus:outline-none" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium">ماذا يحدث إذا لم أكن متواجدًا عند التوصيل؟</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700">سيحاول مندوب التوصيل الاتصال بك. إذا لم يتمكن من الوصول إليك، سيتم إعادة المحاولة مرة أخرى في اليوم التالي. بعد ثلاث محاولات غير ناجحة، سيتم إعادة الطلب إلى مستودعنا.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 text-left bg-white hover:bg-gray-50 focus:outline-none" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium">هل يمكنني اختيار شركة الشحن المفضلة لدي؟</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700">حاليًا، نحن نختار شركة الشحن بناءً على موقعك الجغرافي وتوفر الخدمة. نعمل على توفير خيارات متعددة للشحن في المستقبل القريب.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 text-left bg-white hover:bg-gray-50 focus:outline-none" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium">هل تقدمون خدمة التوصيل في نفس اليوم؟</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700">نحن نقدم خدمة التوصيل في نفس اليوم في مدن محددة (الرياض، جدة، الدمام) مقابل رسوم إضافية. يرجى التواصل مع خدمة العملاء للتأكد من توفر الخدمة في منطقتك.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">First Show</h3>
+                    <p class="text-gray-400">متجر الأزياء النسائية الأول في المملكة</p>
+                    <div class="flex space-x-4 space-x-reverse mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-snapchat-ghost"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">من نحن</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">اتصل بنا</a></li>
+                        <li><a href="shipping-policy.html" class="text-gray-400 hover:text-white">سياسة الشحن</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">فئات المنتجات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">فساتين</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">شنط</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">أحذية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">إكسسوارات</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">النشرة البريدية</h3>
+                    <p class="text-gray-400 mb-4">اشتركي للحصول على آخر العروض والتخفيضات</p>
+                    <form class="flex">
+                        <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-2 w-full rounded-r-md focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-pink-600 px-4 py-2 rounded-l-md hover:bg-pink-700 transition duration-300">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 First Show - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script>
+        // Toggle FAQ
+        function toggleFAQ(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('transform', 'rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('transform', 'rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>

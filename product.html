@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج - First Show</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .swiper-product {
+            width: 100%;
+            height: 500px;
+        }
+        .swiper-thumbs {
+            height: 100px;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+        .swiper-thumbs .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+            cursor: pointer;
+        }
+        .swiper-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+        .product-card:hover .add-to-cart {
+            opacity: 1;
+        }
+        .add-to-cart {
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-pink-600">First Show</div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-600 font-medium">الرئيسية</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">فساتين</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">شنط</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">أحذية</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">إكسسوارات</a>
+                </nav>
+                
+                <!-- Icons -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <a href="#" class="text-gray-700 hover:text-pink-600">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="cart.html" class="text-gray-700 hover:text-pink-600 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count absolute -top-2 -right-2 bg-pink-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">0</span>
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="md:hidden text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center text-sm text-gray-600">
+            <a href="index.html" class="hover:text-pink-600">الرئيسية</a>
+            <span class="mx-2">/</span>
+            <a href="#" class="hover:text-pink-600" id="product-category">فساتين</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-900 font-medium" id="product-name">فستان نسائي أنيق</span>
+        </div>
+    </div>
+
+    <!-- Product Details -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Product Images -->
+                <div>
+                    <!-- Main Swiper -->
+                    <div class="swiper swiper-product mb-4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/dresses/products/product1.jpg" alt="فستان نسائي" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/600x800/FF69B4/FFFFFF?text=فستان+نسائي'">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://via.placeholder.com/600x800/9370DB/FFFFFF?text=صورة+2" alt="فستان نسائي" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://via.placeholder.com/600x800/20B2AA/FFFFFF?text=صورة+3" alt="فستان نسائي" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://via.placeholder.com/600x800/FFA500/FFFFFF?text=صورة+4" alt="فستان نسائي" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Thumbs Swiper -->
+                    <div class="swiper swiper-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/dresses/products/product1.jpg" alt="فستان نسائي" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150x150/FF69B4/FFFFFF?text=صورة+1'">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://via.placeholder.com/150x150/9370DB/FFFFFF?text=صورة+2" alt="فستان نسائي" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://via.placeholder.com/150x150/20B2AA/FFFFFF?text=صورة+3" alt="فستان نسائي" class="w-full h-full object-cover">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://via.placeholder.com/150x150/FFA500/FFFFFF?text=صورة+4" alt="فستان نسائي" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div>
+                    <h1 class="text-3xl font-bold mb-2" id="product-title">فستان نسائي أنيق</h1>
+                    
+                    <!-- Rating -->
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-600 mr-2">(4.5)</span>
+                    </div>
+                    
+                    <!-- Price -->
+                    <div class="mb-6">
+                        <span class="text-2xl font-bold text-pink-600" id="product-price">120 ر.س</span>
+                        <span class="text-gray-500 line-through mr-2" id="product-old-price">150 ر.س</span>
+                        <span class="bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded-full mr-2">خصم 20%</span>
+                    </div>
+                    
+                    <!-- Description -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-2">الوصف</h3>
+                        <p class="text-gray-700" id="product-description">فستان نسائي أنيق مصنوع من أجود أنواع الأقمشة، مناسب للمناسبات الخاصة والحفلات. يتميز بتصميم عصري وألوان جذابة تناسب جميع الأذواق.</p>
+                    </div>
+                    
+                    <!-- Colors -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-2">اللون</h3>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <button class="w-8 h-8 rounded-full bg-white border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent"></button>
+                            <button class="w-8 h-8 rounded-full bg-black border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600"></button>
+                            <button class="w-8 h-8 rounded-full bg-pink-500 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600"></button>
+                            <button class="w-8 h-8 rounded-full bg-blue-500 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600"></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Sizes -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-2">المقاس</h3>
+                        <div class="flex space-x-3 space-x-reverse">
+                            <button class="w-10 h-10 rounded-md border border-gray-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent">S</button>
+                            <button class="w-10 h-10 rounded-md border border-gray-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent">M</button>
+                            <button class="w-10 h-10 rounded-md border border-gray-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent">L</button>
+                            <button class="w-10 h-10 rounded-md border border-gray-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent">XL</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Quantity -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-2">الكمية</h3>
+                        <div class="flex items-center">
+                            <button class="w-10 h-10 rounded-r-md border border-gray-300 flex items-center justify-center focus:outline-none hover:bg-gray-100" id="decrease-quantity">-</button>
+                            <input type="number" value="1" min="1" class="w-16 h-10 border-t border-b border-gray-300 text-center focus:outline-none" id="quantity">
+                            <button class="w-10 h-10 rounded-l-md border border-gray-300 flex items-center justify-center focus:outline-none hover:bg-gray-100" id="increase-quantity">+</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Buttons -->
+                    <div class="flex flex-wrap gap-4">
+                        <button class="bg-pink-600 text-white px-8 py-3 rounded-md hover:bg-pink-700 transition duration-300 flex items-center justify-center" id="add-to-cart">
+                            <i class="fas fa-shopping-cart ml-2"></i>
+                            إضافة للسلة
+                        </button>
+                        <button class="bg-gray-900 text-white px-8 py-3 rounded-md hover:bg-gray-800 transition duration-300 flex items-center justify-center" id="buy-now">
+                            شراء الآن
+                        </button>
+                        <button class="border border-gray-300 text-gray-700 w-12 h-12 rounded-md hover:bg-gray-100 transition duration-300 flex items-center justify-center">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Shipping Info -->
+                    <div class="mt-8 border-t border-gray-200 pt-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-truck text-gray-600 ml-3"></i>
+                            <span>شحن مجاني للطلبات فوق 200 ر.س</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-undo text-gray-600 ml-3"></i>
+                            <span>استرجاع مجاني خلال 14 يوم</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt text-gray-600 ml-3"></i>
+                            <span>ضمان جودة المنتج</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Similar Products -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">منتجات مشابهة</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="similar-products">
+                <!-- Products will be loaded from JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">First Show</h3>
+                    <p class="text-gray-400">متجر الأزياء النسائية الأول في المملكة</p>
+                    <div class="flex space-x-4 space-x-reverse mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-snapchat-ghost"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">من نحن</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">اتصل بنا</a></li>
+                        <li><a href="shipping-policy.html" class="text-gray-400 hover:text-white">سياسة الشحن</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">فئات المنتجات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">فساتين</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">شنط</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">أحذية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">إكسسوارات</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">النشرة البريدية</h3>
+                    <p class="text-gray-400 mb-4">اشتركي للحصول على آخر العروض والتخفيضات</p>
+                    <form class="flex">
+                        <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-2 w-full rounded-r-md focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-pink-600 px-4 py-2 rounded-l-md hover:bg-pink-700 transition duration-300">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 First Show - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/product.js"></script>
+</body>
+</html>

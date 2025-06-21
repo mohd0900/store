@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جميع المنتجات - متجر تيف</title>
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-pink-600">متجر تيف</a>
+                </div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-600 transition duration-300">الرئيسية</a>
+                    <a href="products.html" class="text-pink-600 font-medium">المنتجات</a>
+                    <a href="about.html" class="text-gray-700 hover:text-pink-600 transition duration-300">من نحن</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-pink-600 transition duration-300">اتصل بنا</a>
+                </nav>
+                
+                <!-- Icons -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <a href="#" class="text-gray-700 hover:text-pink-600 transition duration-300 search-toggle">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 transition duration-300 relative">
+                        <i class="fas fa-heart"></i>
+                        <span class="wishlist-count absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
+                    </a>
+                    <a href="cart.html" class="text-gray-700 hover:text-pink-600 transition duration-300 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
+                    </a>
+                    <button class="md:hidden text-gray-700 focus:outline-none mobile-menu-button">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-pink-600 transition duration-300">الرئيسية</a>
+                <a href="products.html" class="block py-2 text-pink-600 font-medium">المنتجات</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-pink-600 transition duration-300">من نحن</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-pink-600 transition duration-300">اتصل بنا</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Search Overlay -->
+    <div class="search-overlay fixed inset-0 bg-black bg-opacity-50 z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl px-4">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-xl font-bold">البحث</h3>
+                    <button class="text-gray-500 hover:text-gray-700 focus:outline-none search-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <form class="search-form">
+                    <div class="flex border border-gray-300 rounded-lg overflow-hidden">
+                        <input type="text" placeholder="ابحث عن منتجات..." class="px-4 py-3 w-full focus:outline-none">
+                        <button type="submit" class="bg-pink-600 text-white px-6 hover:bg-pink-700 transition duration-300">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-100 py-3">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm">
+                <a href="index.html" class="text-gray-600 hover:text-pink-600">الرئيسية</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <span class="text-gray-800">المنتجات</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Products Section -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold mb-8 text-center">جميع المنتجات</h1>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Sidebar -->
+                <div class="lg:w-1/4">
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <h3 class="text-lg font-bold mb-4">الفئات</h3>
+                        <ul class="space-y-2 categories-list">
+                            <!-- Categories will be loaded here -->
+                            <li class="animate-pulse h-6 bg-gray-200 rounded w-3/4 mb-2"></li>
+                            <li class="animate-pulse h-6 bg-gray-200 rounded w-2/3 mb-2"></li>
+                            <li class="animate-pulse h-6 bg-gray-200 rounded w-4/5 mb-2"></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <h3 class="text-lg font-bold mb-4">السعر</h3>
+                        <div class="mb-4">
+                            <label class="block text-sm text-gray-600 mb-1">من</label>
+                            <input type="number" min="0" class="price-min w-full border border-gray-300 rounded px-3 py-2" placeholder="0">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm text-gray-600 mb-1">إلى</label>
+                            <input type="number" min="0" class="price-max w-full border border-gray-300 rounded px-3 py-2" placeholder="1000">
+                        </div>
+                        <button class="apply-price-filter bg-pink-600 text-white w-full py-2 rounded hover:bg-pink-700 transition duration-300">تطبيق</button>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-lg font-bold mb-4">تصفية</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-sale form-checkbox text-pink-600 rounded">
+                                <span class="mr-2">العروض فقط</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-new form-checkbox text-pink-600 rounded">
+                                <span class="mr-2">المنتجات الجديدة</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="filter-instock form-checkbox text-pink-600 rounded">
+                                <span class="mr-2">متوفر في المخزون</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Products -->
+                <div class="lg:w-3/4">
+                    <!-- Sorting and View Options -->
+                    <div class="flex flex-col sm:flex-row justify-between items-center mb-6 bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center mb-4 sm:mb-0">
+                            <span class="text-gray-600 ml-2">ترتيب حسب:</span>
+                            <select class="sort-select border border-gray-300 rounded px-2 py-1 focus:outline-none focus:border-pink-500">
+                                <option value="default">الافتراضي</option>
+                                <option value="price-asc">السعر: من الأقل للأعلى</option>
+                                <option value="price-desc">السعر: من الأعلى للأقل</option>
+                                <option value="name-asc">الاسم: أ-ي</option>
+                                <option value="name-desc">الاسم: ي-أ</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-gray-600 ml-2">عرض:</span>
+                            <button class="view-grid-btn bg-pink-600 text-white p-2 rounded-l hover:bg-pink-700 transition duration-300">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="view-list-btn bg-gray-200 text-gray-700 p-2 rounded-r hover:bg-gray-300 transition duration-300">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Products Grid -->
+                    <div class="products-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Products will be loaded here -->
+                        <div class="animate-pulse bg-white rounded-lg shadow-sm overflow-hidden">
+                            <div class="h-64 bg-gray-200"></div>
+                            <div class="p-4">
+                                <div class="h-6 bg-gray-200 rounded w-3/4 mb-3"></div>
+                                <div class="h-5 bg-gray-200 rounded w-1/2 mb-4"></div>
+                                <div class="h-8 bg-gray-200 rounded w-full"></div>
+                            </div>
+                        </div>
+                        <div class="animate-pulse bg-white rounded-lg shadow-sm overflow-hidden">
+                            <div class="h-64 bg-gray-200"></div>
+                            <div class="p-4">
+                                <div class="h-6 bg-gray-200 rounded w-3/4 mb-3"></div>
+                                <div class="h-5 bg-gray-200 rounded w-1/2 mb-4"></div>
+                                <div class="h-8 bg-gray-200 rounded w-full"></div>
+                            </div>
+                        </div>
+                        <div class="animate-pulse bg-white rounded-lg shadow-sm overflow-hidden">
+                            <div class="h-64 bg-gray-200"></div>
+                            <div class="p-4">
+                                <div class="h-6 bg-gray-200 rounded w-3/4 mb-3"></div>
+                                <div class="h-5 bg-gray-200 rounded w-1/2 mb-4"></div>
+                                <div class="h-8 bg-gray-200 rounded w-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="mt-10 flex justify-center">
+                        <div class="pagination flex items-center space-x-1 space-x-reverse">
+                            <button class="pagination-prev bg-gray-200 text-gray-700 px-3 py-1 rounded-l hover:bg-gray-300 transition duration-300 disabled:opacity-50" disabled>
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <button class="pagination-page bg-pink-600 text-white px-3 py-1 hover:bg-pink-700 transition duration-300">1</button>
+                            <button class="pagination-page bg-gray-200 text-gray-700 px-3 py-1 hover:bg-gray-300 transition duration-300">2</button>
+                            <button class="pagination-page bg-gray-200 text-gray-700 px-3 py-1 hover:bg-gray-300 transition duration-300">3</button>
+                            <button class="pagination-next bg-gray-200 text-gray-700 px-3 py-1 rounded-r hover:bg-gray-300 transition duration-300">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="bg-pink-600 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">اشترك في نشرتنا الإخبارية</h3>
+                    <p>احصل على آخر العروض والتحديثات مباشرة إلى بريدك الإلكتروني</p>
+                </div>
+                <div class="w-full md:w-1/3">
+                    <form class="flex">
+                        <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-3 w-full rounded-r focus:outline-none text-gray-700">
+                        <button type="submit" class="bg-gray-900 text-white px-6 py-3 rounded-l hover:bg-gray-800 transition duration-300">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">متجر تيف</h4>
+                    <p class="mb-4">متجرك المفضل للأزياء النسائية العصرية بأسعار مناسبة وجودة عالية.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="bg-white bg-opacity-20 p-2 rounded-full hover:bg-pink-600 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 p-2 rounded-full hover:bg-pink-600 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-white bg-opacity-20 p-2 rounded-full hover:bg-pink-600 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-pink-600 transition duration-300">الرئيسية</a></li>
+                        <li><a href="products.html" class="hover:text-pink-600 transition duration-300">المنتجات</a></li>
+                        <li><a href="about.html" class="hover:text-pink-600 transition duration-300">من نحن</a></li>
+                        <li><a href="contact.html" class="hover:text-pink-600 transition duration-300">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">المساعدة</h4>
+                    <ul class="space-y-2">
+                        <li><a href="shipping-policy.html" class="hover:text-pink-600 transition duration-300">سياسة الشحن</a></li>
+                        <li><a href="#" class="hover:text-pink-600 transition duration-300">سياسة الإرجاع</a></li>
+                        <li><a href="#" class="hover:text-pink-600 transition duration-300">الأسئلة الشائعة</a></li>
+                        <li><a href="#" class="hover:text-pink-600 transition duration-300">الخصوصية</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">اتصل بنا</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 ml-2"></i>
+                            <span>شارع الملك فهد، الرياض، المملكة العربية السعودية</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 ml-2"></i>
+                            <span>+966 12 345 6789</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 ml-2"></i>
+                            <span>info@tifstore.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2023 متجر تيف. جميع الحقوق محفوظة.</p>
+                <div class="mt-4 md:mt-0">
+                    <img src="assets/images/payment-methods.png" alt="طرق الدفع" class="h-8">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Alpine JS -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Cart JS -->
+    <script src="assets/js/cart.js"></script>
+    
+    <!-- Products JS -->
+    <script src="assets/js/products.js"></script>
+</body>
+</html>

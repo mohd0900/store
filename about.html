@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - First Show</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-pink-600">First Show</div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-600 font-medium">الرئيسية</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">فساتين</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">شنط</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">أحذية</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">إكسسوارات</a>
+                </nav>
+                
+                <!-- Icons -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <a href="#" class="text-gray-700 hover:text-pink-600">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="cart.html" class="text-gray-700 hover:text-pink-600 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count absolute -top-2 -right-2 bg-pink-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">0</span>
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="md:hidden text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center text-sm text-gray-600">
+            <a href="index.html" class="hover:text-pink-600">الرئيسية</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-900 font-medium">من نحن</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="py-12 bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1920x400/FF69B4/FFFFFF?text=First+Show')">
+        <div class="container mx-auto px-4">
+            <div class="bg-white bg-opacity-90 p-8 md:p-12 max-w-3xl rounded-lg">
+                <h1 class="text-4xl font-bold mb-6">من نحن</h1>
+                <p class="text-lg text-gray-700 mb-4">نحن متجر First Show، متخصصون في تقديم أحدث صيحات الموضة النسائية بأعلى جودة وأسعار مناسبة.</p>
+                <p class="text-lg text-gray-700">نسعى دائمًا لتوفير تجربة تسوق مميزة لعملائنا من خلال تقديم منتجات عصرية وخدمة عملاء استثنائية.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">قصتنا</h2>
+                    <p class="text-gray-700 mb-4">بدأت قصة First Show في عام 2018 عندما لاحظنا الحاجة إلى متجر يقدم أزياء نسائية عصرية وأنيقة بأسعار معقولة في المملكة العربية السعودية.</p>
+                    <p class="text-gray-700 mb-4">انطلقنا بفريق صغير وشغف كبير، وسرعان ما نمت علامتنا التجارية لتصبح واحدة من أكثر المتاجر شعبية في مجال الأزياء النسائية.</p>
+                    <p class="text-gray-700">اليوم، نفخر بخدمة آلاف العملاء وتوفير مجموعة واسعة من المنتجات التي تلبي مختلف الأذواق والمناسبات.</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/600x400/FF69B4/FFFFFF?text=قصتنا" alt="قصتنا" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="py-16 bg-pink-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">قيمنا</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gem text-2xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">الجودة</h3>
+                    <p class="text-gray-700">نلتزم بتقديم منتجات ذات جودة عالية تدوم طويلاً وتلبي توقعات عملائنا.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-2xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">رضا العملاء</h3>
+                    <p class="text-gray-700">نضع رضا العملاء في مقدمة أولوياتنا ونسعى دائمًا لتقديم تجربة تسوق استثنائية.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm text-center">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-leaf text-2xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">الاستدامة</h3>
+                    <p class="text-gray-700">نسعى لاتخاذ خطوات نحو ممارسات أكثر استدامة في عملياتنا وسلسلة التوريد.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">فريقنا</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="mb-4 relative">
+                        <img src="https://via.placeholder.com/300x300/FF69B4/FFFFFF?text=سارة" alt="سارة" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">سارة الأحمد</h3>
+                    <p class="text-gray-600 mb-3">المؤسس والرئيس التنفيذي</p>
+                    <div class="flex justify-center space-x-3 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-pink-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-pink-600"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="mb-4 relative">
+                        <img src="https://via.placeholder.com/300x300/9370DB/FFFFFF?text=نورة" alt="نورة" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">نورة السعيد</h3>
+                    <p class="text-gray-600 mb-3">مدير التصميم</p>
+                    <div class="flex justify-center space-x-3 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-pink-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-pink-600"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="mb-4 relative">
+                        <img src="https://via.placeholder.com/300x300/20B2AA/FFFFFF?text=محمد" alt="محمد" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">محمد العلي</h3>
+                    <p class="text-gray-600 mb-3">مدير التسويق</p>
+                    <div class="flex justify-center space-x-3 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-pink-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-pink-600"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="mb-4 relative">
+                        <img src="https://via.placeholder.com/300x300/FFA500/FFFFFF?text=لمى" alt="لمى" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">لمى الخالد</h3>
+                    <p class="text-gray-600 mb-3">مدير خدمة العملاء</p>
+                    <div class="flex justify-center space-x-3 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-pink-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-pink-600"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-pink-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">انضمي إلى عائلة First Show</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">اشتركي في نشرتنا البريدية للحصول على آخر العروض والتخفيضات وأحدث صيحات الموضة</p>
+            <form class="flex max-w-md mx-auto">
+                <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-3 w-full rounded-r-md focus:outline-none text-gray-900">
+                <button type="submit" class="bg-gray-900 px-6 py-3 rounded-l-md hover:bg-gray-800 transition duration-300">اشتراك</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">First Show</h3>
+                    <p class="text-gray-400">متجر الأزياء النسائية الأول في المملكة</p>
+                    <div class="flex space-x-4 space-x-reverse mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-snapchat-ghost"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">من نحن</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">اتصل بنا</a></li>
+                        <li><a href="shipping-policy.html" class="text-gray-400 hover:text-white">سياسة الشحن</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">فئات المنتجات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">فساتين</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">شنط</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">أحذية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">إكسسوارات</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">النشرة البريدية</h3>
+                    <p class="text-gray-400 mb-4">اشتركي للحصول على آخر العروض والتخفيضات</p>
+                    <form class="flex">
+                        <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-2 w-full rounded-r-md focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-pink-600 px-4 py-2 rounded-l-md hover:bg-pink-700 transition duration-300">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 First Show - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

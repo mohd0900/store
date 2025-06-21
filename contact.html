@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - First Show</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-pink-600">First Show</div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="index.html" class="text-gray-700 hover:text-pink-600 font-medium">الرئيسية</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">فساتين</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">شنط</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">أحذية</a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600 font-medium">إكسسوارات</a>
+                </nav>
+                
+                <!-- Icons -->
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <a href="#" class="text-gray-700 hover:text-pink-600">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="cart.html" class="text-gray-700 hover:text-pink-600 relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count absolute -top-2 -right-2 bg-pink-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">0</span>
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-pink-600">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="md:hidden text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="container mx-auto px-4 py-4">
+        <div class="flex items-center text-sm text-gray-600">
+            <a href="index.html" class="hover:text-pink-600">الرئيسية</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-900 font-medium">اتصل بنا</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="py-12 bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1920x400/FF69B4/FFFFFF?text=اتصل+بنا')">
+        <div class="container mx-auto px-4">
+            <div class="bg-white bg-opacity-90 p-8 md:p-12 max-w-3xl rounded-lg">
+                <h1 class="text-4xl font-bold mb-6">اتصل بنا</h1>
+                <p class="text-lg text-gray-700">نحن هنا للإجابة على استفساراتك ومساعدتك في أي وقت. يمكنك التواصل معنا من خلال النموذج أدناه أو عبر وسائل الاتصال المتاحة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">أرسل لنا رسالة</h2>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">الاسم</label>
+                                <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">رقم الجوال</label>
+                            <input type="tel" id="phone" name="phone" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 mb-2">الموضوع</label>
+                            <input type="text" id="subject" name="subject" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-pink-600 focus:border-transparent" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="bg-pink-600 text-white px-6 py-3 rounded-md hover:bg-pink-700 transition duration-300">إرسال الرسالة</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">معلومات الاتصال</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center ml-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-pink-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">العنوان</h3>
+                                <p class="text-gray-700">شارع الملك فهد، حي العليا<br>الرياض، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center ml-4 mt-1">
+                                <i class="fas fa-phone-alt text-pink-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">الهاتف</h3>
+                                <p class="text-gray-700">+966 12 345 6789</p>
+                                <p class="text-gray-700">+966 12 345 6780</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center ml-4 mt-1">
+                                <i class="fas fa-envelope text-pink-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">البريد الإلكتروني</h3>
+                                <p class="text-gray-700">info@firstshow.com</p>
+                                <p class="text-gray-700">support@firstshow.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center ml-4 mt-1">
+                                <i class="fas fa-clock text-pink-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">ساعات العمل</h3>
+                                <p class="text-gray-700">الأحد - الخميس: 9:00 صباحًا - 9:00 مساءً</p>
+                                <p class="text-gray-700">الجمعة - السبت: 2:00 مساءً - 10:00 مساءً</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div class="mt-8">
+                        <h3 class="text-lg font-semibold mb-4">تابعنا على وسائل التواصل الاجتماعي</h3>
+                        <div class="flex space-x-4 space-x-reverse">
+                            <a href="#" class="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center text-pink-600 hover:bg-pink-600 hover:text-white transition duration-300">
+                                <i class="fab fa-snapchat-ghost"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6 text-center">موقعنا</h2>
+            <div class="h-96 bg-gray-300 rounded-lg overflow-hidden">
+                <!-- Placeholder for map -->
+                <div class="w-full h-full flex items-center justify-center bg-gray-200">
+                    <p class="text-gray-500 text-lg">خريطة الموقع</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">الأسئلة الشائعة</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 text-left bg-white hover:bg-gray-50 focus:outline-none" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium">كيف يمكنني تتبع طلبي؟</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700">يمكنك تتبع طلبك من خلال الدخول إلى حسابك والانتقال إلى صفحة "طلباتي" حيث ستجد جميع تفاصيل الطلب وحالته الحالية.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 text-left bg-white hover:bg-gray-50 focus:outline-none" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium">ما هي سياسة الاسترجاع والاستبدال؟</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700">يمكنك استرجاع أو استبدال المنتج خلال 14 يومًا من تاريخ الاستلام، شرط أن يكون المنتج في حالته الأصلية مع جميع الملصقات والتغليف.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 text-left bg-white hover:bg-gray-50 focus:outline-none" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium">كم تستغرق عملية التوصيل؟</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700">تستغرق عملية التوصيل عادةً من 3 إلى 5 أيام عمل داخل المدن الرئيسية، ومن 5 إلى 7 أيام عمل للمناطق الأخرى.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="flex items-center justify-between w-full p-4 text-left bg-white hover:bg-gray-50 focus:outline-none" onclick="toggleFAQ(this)">
+                        <span class="text-lg font-medium">هل يمكنني تغيير عنوان التوصيل بعد تقديم الطلب؟</span>
+                        <i class="fas fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-4 bg-gray-50 border-t border-gray-200">
+                        <p class="text-gray-700">نعم، يمكنك تغيير عنوان التوصيل قبل شحن الطلب. يرجى التواصل مع خدمة العملاء في أقرب وقت ممكن لتحديث العنوان.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">First Show</h3>
+                    <p class="text-gray-400">متجر الأزياء النسائية الأول في المملكة</p>
+                    <div class="flex space-x-4 space-x-reverse mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-snapchat-ghost"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">من نحن</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">اتصل بنا</a></li>
+                        <li><a href="shipping-policy.html" class="text-gray-400 hover:text-white">سياسة الشحن</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">فئات المنتجات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">فساتين</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">شنط</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">أحذية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">إكسسوارات</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">النشرة البريدية</h3>
+                    <p class="text-gray-400 mb-4">اشتركي للحصول على آخر العروض والتخفيضات</p>
+                    <form class="flex">
+                        <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-2 w-full rounded-r-md focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-pink-600 px-4 py-2 rounded-l-md hover:bg-pink-700 transition duration-300">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 First Show - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Alpine JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script>
+        // Toggle FAQ
+        function toggleFAQ(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('transform', 'rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('transform', 'rotate-180');
+            }
+        }
+        
+        // Contact Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            Swal.fire({
+                title: 'تم الإرسال بنجاح!',
+                text: 'سنقوم بالرد عليك في أقرب وقت ممكن.',
+                icon: 'success',
+                confirmButtonText: 'حسناً',
+                confirmButtonColor: '#DB2777'
+            });
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
